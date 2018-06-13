@@ -94,7 +94,4 @@ export default {
 }
 .item-list .lt .fa{color:#666;}
 .item-list{border-bottom: 1px solid #eee;}
-.signout{
-  
-}
 </style>
