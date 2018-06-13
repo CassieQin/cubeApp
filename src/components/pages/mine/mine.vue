@@ -4,7 +4,7 @@
       <div class="userpic text-center">
         <img src="../../../assets/pic.jpg" alt="">
       </div>
-      <div class="fsize-28 color-333 text-center username">嬉笑太盛的女子</div>
+      <div class="fsize-28 color-333 text-center username">这里是用户名</div>
     </div>
     <div class="mine-content">
       <div class="item-list" v-for="item in items" :key="item.id">
