@@ -43,7 +43,7 @@ export default {
   },
   methods:{
     viewList: function(){
-      console.log(1);
+      this.$router.push('/fileDetail');
     }
   },
   components:{

@@ -21,6 +21,9 @@ export default new Router({
       path: '/file',
       component: resolve => require(['@/components/pages/files/file.vue'], resolve)
     },{
+      path: '/fileDetail',
+      component: resolve => require(['@/components/pages/files/fileDetail.vue'], resolve)
+    },{
       path: '/label',
       component: resolve => require(['@/components/pages/labels/label.vue'], resolve)
     },{
