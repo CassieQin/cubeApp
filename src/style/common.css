@@ -1,0 +1,128 @@
+html,body{
+    height: 100%;
+    background:#fff;
+    color:#666;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color:transparent;
+    -webkit-touch-callout:none;
+    -webkit-touch-callout:none;  
+}
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,textarea,p,th,td,button,article,aside,details,footer,header,nav,section {margin:0;padding:0;}  
+body,button,input,select,textarea {font:'Helvetica Neue',Arial,'Liberation Sans',FreeSans,'Hiragino Sans GB',sans-serif\"Microsoft YaHei"\"微软雅黑";line-height:20px;}     
+h1,h2,h3,h4,h5,h6 {font-weight:normal;}  
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {text-size-adjust:none;-webkit-text-size-adjust:none;}/*阻止旋转屏幕时自动调整字体大小*/  
+textarea{resize:none;}  
+/*取消按钮在iphone上的默认样式*/  
+input{outline:none}   
+input::-webkit-input-placeholder{color:#b1b1b1;}  
+textarea::-webkit-input-placeholder{color:#b1b1b1;}  
+input::-webkit-input-speech-button {display:none}  
+table {border-collapse:collapse;border-spacing:0;}  
+th {text-align:inherit;}  
+fieldset,img,button {border:none;}  
+abbr,acronym {border:none;font-variant:normal;}  
+del {text-decoration:line-through;}  
+ol,ul {list-style:none;}
+ins,a,a:hover {text-decoration:none;}  
+a:focus,*:focus,button {outline:none;} 
+#app{ width: 100%; height: 100%; overflow: auto;} 
+.lt{float: left;}
+.rt{float: right;}
+.a-underline{text-decoration: underline;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+/*间距样式*/
+.mt4{margin-top: .45rem;}
+.mt3{margin-top: .3rem;}
+.fsize-16{font-size: .16rem;}
+.fsize-24{font-size: .24rem;}
+.fsize-28{font-size: .28rem;}
+.fsize-3{font-size: .3rem;}
+.fsize-32{font-size: .32rem;}
+.fsize-34{font-size: .34rem;}
+.fsize-36{font-size: .36rem;}
+.fsize-48{font-size: .48rem;}
+.color-333{color: #333;}
+.color-888{color: #888;}
+.color-999{color: #999;}
+.block{display: block;}
+.border-right{border-right: 1px solid #eee;}
+/*按钮样式*/
+.btn{
+    height: .88rem;
+    line-height: .88rem;
+    width: 100%;
+    border-radius: 2px;
+}
+.iptbox,.iptbox .ipt{
+    height: .82rem;
+    line-height: .82rem;
+}
+.iptbox,.searchbox{
+    width: calc(100% - 2px);
+    border-radius: 2px;
+    border: 1px solid #888;
+    color: #888;
+    position: relative;
+}
+.ipt{position: absolute;}
+.iptbox .fa{margin-left: .35rem;}
+.iptbox .ipt{
+    border: none;
+    width: calc(100% - 1rem);
+    left: .9rem;
+}
+.dark_btn-login{margin-top: .74rem;}
+.note-infor{margin-top: .32rem;}
+.searchbox,.searchbox .ipt{
+    height: .6rem;
+    line-height: .6rem;
+}
+.searchbox .ipt{
+    border: none;
+    width: calc(100% - 20px);
+    left: 10px;
+    background: #f7f7f7;
+}
+.searchbox .fa{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -9px;
+}
+/*页面样式*/
+.warpper{
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+}
+.warpper .content{
+    height: calc(100% - 2.16rem);
+    position: relative;
+    top: 1.18rem;
+    padding: 0 .15rem;
+    overflow: auto;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 1.7rem  0 1rem 0;
+}
+/*单元格样式*/
+.item-list{
+    height: .88rem;
+    line-height: .88rem;
+    background: #fff;
+    padding: 0 .25rem;
+    margin-bottom: .2rem;
+}
+.item-list .lt .fa{
+    color:#ea9518;
+    margin-right: .1rem;
+}
