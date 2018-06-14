@@ -36,6 +36,7 @@ a:focus,*:focus,button {outline:none;}
 /*间距样式*/
 .mt4{margin-top: .45rem;}
 .mt3{margin-top: .3rem;}
+.mb3{margin-bottom: .3rem;}
 .fsize-16{font-size: .16rem;}
 .fsize-24{font-size: .24rem;}
 .fsize-28{font-size: .28rem;}
@@ -125,4 +126,30 @@ a:focus,*:focus,button {outline:none;}
 .item-list .lt .fa{
     color:#ea9518;
     margin-right: .1rem;
+}
+/*笔记列表*/
+.item-img {
+    height: 5.8rem;
+  }
+.item-title {
+    height: 0.6rem;
+    line-height: 0.6rem;
+}
+.item-summary {
+    clear: both;
+    height: 0.8rem;
+    overflow: hidden;
+}
+.item-picture {
+    height: 3.2rem;
+    margin:0.15rem 0;
+}
+.item-btn {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding: 0.05rem 0;
+    margin-top: 0.1rem;
 }

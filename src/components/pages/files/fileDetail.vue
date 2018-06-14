@@ -2,14 +2,14 @@
   <div class="fileDetail warpper">
     <vhead :headTitle="headTitle" :isShow="isShow"></vhead>
     <div class="content ">
-      <div class="item item-img mt3" v-for="item in items" :key="item.id">
+      <div class="item item-img mb3" v-for="item in items" :key="item.id">
         <div>
           <div class="item-title">
             <span class="lt fsize-3 color-333">{{item.title}}</span>
             <span class="rt fsize-16 color-999">{{item.time}}</span>
           </div>
-          <div class="item-summary fsize-28 color-888">{{item.summary}}</div>
           <div class="item-picture" :style="{background: 'url(' + item.url + ') left center no-repeat'}"></div>
+          <div class="item-summary fsize-28 color-888">{{item.summary}}</div>
         </div>
         <div class="item-btn" v-html="btn"></div>
       </div>
@@ -58,37 +58,12 @@ export default {
 
 <style scoped>
 .fileDetail .content{
-    height: 100%;
+    height: calc(100% - 1.18rem);
 }
 .item {
   width: calc(100% - 0.4rem);
   background: #fff;
   padding: 0.2rem;
-}
-.item-img {
-  height: 5.8rem;
-}
-.item-title {
-  height: 0.6rem;
-  line-height: 0.6rem;
-}
-.item-summary {
-  clear: both;
-  height: 0.8rem;
-  overflow: hidden;
-  margin-bottom: 0.2rem;
-}
-.item-picture {
-  height: 3.2rem;
-}
-.item-btn {
-  height: 0.8rem;
-  line-height: 0.8rem;
-  display: flex;
-  align-items: center;
-  border-top: 1px solid #eee;
-  padding: 0.05rem 0;
-  margin-top: 0.2rem;
 }
 </style>
 <style>

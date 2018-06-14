@@ -49,7 +49,11 @@ export default {
 </script>
 
 <style scoped>
-.content-fff{background: #fff;}
+.content-fff{
+  background: #fff;
+  height: calc(100% - 2.36rem);
+  padding: 0 .25rem;
+}
 .detail-title{
     height: .7rem;
     line-height: .7rem;
