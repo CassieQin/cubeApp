@@ -30,6 +30,21 @@ export default new Router({
       path: '/mine',
       component: resolve => require(['@/components/pages/mine/mine.vue'], resolve)
     },{
+      path: '/personal',
+      component: resolve => require(['@/components/pages/mine/personalInfor.vue'], resolve)
+    },{
+      path: '/fontfamily',
+      component: resolve => require(['@/components/pages/mine/fontFamily.vue'], resolve)
+    },{
+      path: '/fontsize',
+      component: resolve => require(['@/components/pages/mine/fontSize.vue'], resolve)
+    },{
+      path: '/security',
+      component: resolve => require(['@/components/pages/mine/security.vue'], resolve)
+    },{
+      path: '/us',
+      component: resolve => require(['@/components/pages/mine/us.vue'], resolve)
+    },{
       path: '/login',
       component: resolve => require(['@/components/pages/login.vue'], resolve)
     }

@@ -3,7 +3,7 @@
     <vhead :headTitle="headTitle" :isShow="isShow"></vhead>
     <div class="content ">
       <div class="item item-img mb3" v-for="item in items" :key="item.id">
-        <div>
+        <div @click="viewDetail">
           <div class="item-title">
             <span class="lt fsize-3 color-333">{{item.title}}</span>
             <span class="rt fsize-16 color-999">{{item.time}}</span>
@@ -48,7 +48,9 @@ export default {
     };
   },
   methods:{
-    
+    viewDetail: function(){
+      this.$router.push('/noteDetail');
+    }
   },
   components:{
     vhead

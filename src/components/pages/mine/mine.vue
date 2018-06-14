@@ -7,7 +7,7 @@
       <div class="fsize-28 color-333 text-center username">嬉笑太盛的女子</div>
     </div>
     <div class="mine-content">
-      <div class="item-list" v-for="item in items" :key="item.id">
+      <div class="item-list" v-for="item in items" :key="item.id" @click="jump(item.url)">
         <div class="lt">
           <i class="fa fsize-34" :class="item.icon"></i>
           <span class="fsize-28 color-333">{{item.name}}</span>
@@ -29,22 +29,27 @@ export default {
       items:[
         {
           icon: 'fa-address-card-o',
-          name:'个人资料'
+          name:'个人资料',
+          url:'/personal'
         },{
           icon: 'fa-font',
-          name:'字体设置'
+          name:'字体设置',
+          url:'/fontfamily'
         },{
           icon: 'fa-text-width ',
-          name:'字号设置'
+          name:'字号设置',
+          url:'/fontsize'
         },{
           icon: 'fa-lock',
-          name:'安全隐私'
+          name:'安全隐私',
+          url:'/security'
         },{
           icon: 'fa-eraser',
           name:'清除缓存'
         },{
           icon: 'fa-users',
-          name:'关于我们'
+          name:'关于我们',
+          url:'/us'
         }
       ]
     }
@@ -53,6 +58,9 @@ export default {
     vfoot
   },
   methods:{
+    jump: function(url){
+      this.$router.push(url);
+    },
     signout: function(){
       this.$router.push('/');
     }
