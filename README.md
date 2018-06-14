@@ -1,6 +1,6 @@
 # cubeapp
 
-> 格子记软件，一款专注于读书笔记的app
+> 格子记软件，一款专注于读书笔记的app.
 
 ## Build Setup
 
