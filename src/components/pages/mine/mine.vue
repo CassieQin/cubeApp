@@ -70,7 +70,7 @@ export default {
 
 <style scoped>
 .header{
-  padding-top: 0.45rem;
+  padding-top: .45rem;
   height: 2.2rem;
   background: #fff;
 }
@@ -79,7 +79,7 @@ export default {
   width: 1.3rem;
   border-radius: 100%;
   border: 1px solid #0f0f0f;
-  margin-left: calc(50% - 0.65rem);
+  margin-left: calc(50% - .65rem);
 }
 .userpic img{
   width: 100%;

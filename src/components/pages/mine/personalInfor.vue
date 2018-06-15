@@ -81,6 +81,9 @@ export default {
   padding: 0 0.05rem;
   position: relative;
 }
+.item-li:last-child{
+  border: none;
+}
 .item-li label {
   display: inline-block;
   width: 1.45rem;
