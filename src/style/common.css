@@ -30,6 +30,8 @@ a:focus,*:focus,button {outline:none;}
 #app{ width: 100%; height: 100%; overflow: auto;} 
 .lt{float: left;}
 .rt{float: right;}
+.rt0{right: 0;}
+.top3{top: .3rem;}
 .a-underline{text-decoration: underline;}
 .text-center{text-align: center;}
 .text-right{text-align: right;}
@@ -50,6 +52,8 @@ a:focus,*:focus,button {outline:none;}
 .color-999{color: #999;}
 .block{display: block;}
 .border-right{border-right: 1px solid #eee;}
+.relative{position: relative;}
+.absolute{position: absolute;}
 /*按钮样式*/
 .btn{
     height: .88rem;
