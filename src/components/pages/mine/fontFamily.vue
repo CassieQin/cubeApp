@@ -3,7 +3,10 @@
     <vhead :headTitle="headTitle" :isShow="isShow"></vhead>
     <div class="content">
       <div class="item">
-        <div class="item-li" v-for="data in datas" :key="data.id">{{data.font}}</div>
+        <div class="item-li relative" v-for="(data,index) in datas" :key="data.id"  @click="setFontfamily(index)">
+          {{data.font}}
+          <i class="fa fa-check absolute rt0 top3" v-show="iconShow === index"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -17,6 +20,7 @@ export default {
     return {
       headTitle:'字体设置',
       isShow: true,
+      iconShow: 0,
       datas:[
         {
           font: '方正行楷简体',
@@ -38,7 +42,10 @@ export default {
     vhead
   },
   methods:{
-    
+    setFontfamily: function(index){
+      console.log('字体已设置成' + this.datas[index].font);
+      this.iconShow = index;
+    }
   }
 }
 </script>

@@ -110,4 +110,9 @@ export default {
   color: #999;
   font-size: 0.18rem;
 }
+.item-con{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 </style>
