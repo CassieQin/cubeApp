@@ -2,8 +2,8 @@
   <div class="fontfamily warpper">
     <vhead :headTitle="headTitle" :isShow="isShow"></vhead>
     <div class="content">
-      <div class="item">
-        <div class="item-li relative" v-for="(data,index) in datas" :key="data.id"  @click="setFontfamily(index)">
+      <div class="mine-item">
+        <div class="mine-item-li relative" v-for="(data,index) in datas" :key="data.id"  @click="setFontfamily(index)">
           {{data.font}}
           <i class="fa fa-check absolute rt0 top3" v-show="iconShow === index"></i>
         </div>
@@ -53,20 +53,5 @@ export default {
 <style scoped>
 .content {
   padding: 0;
-}
-.item {
-  background: #fff;
-  height: auto;
-  padding: 0 0.25rem;
-}
-.item-li {
-  height: 0.88rem;
-  line-height: 0.88rem;
-  border-bottom: 1px solid #eee;
-  padding: 0 0.05rem;
-  position: relative;
-}
-.item-li:last-child{
-  border: none;
 }
 </style>

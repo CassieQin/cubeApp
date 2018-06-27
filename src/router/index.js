@@ -45,6 +45,21 @@ export default new Router({
       path: '/us',
       component: resolve => require(['@/components/pages/mine/us.vue'], resolve)
     },{
+      path: '/company',
+      component: resolve => require(['@/components/pages/mine/company.vue'], resolve)
+    },{
+      path: '/software',
+      component: resolve => require(['@/components/pages/mine/software.vue'], resolve)
+    },{
+      path: '/policy',
+      component: resolve => require(['@/components/pages/mine/policy.vue'], resolve)
+    },{
+      path: '/score',
+      component: resolve => require(['@/components/pages/mine/score.vue'], resolve)
+    },{
+      path: '/feedback',
+      component: resolve => require(['@/components/pages/mine/feedback.vue'], resolve)
+    },{
       path: '/login',
       component: resolve => require(['@/components/pages/login.vue'], resolve)
     }
