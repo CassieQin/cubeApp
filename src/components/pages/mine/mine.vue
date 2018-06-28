@@ -45,7 +45,8 @@ export default {
           url:'/security'
         },{
           icon: 'fa-eraser',
-          name:'清除缓存'
+          name:'清除缓存',
+          url:'/cookie'
         },{
           icon: 'fa-users',
           name:'关于我们',

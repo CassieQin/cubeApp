@@ -42,6 +42,9 @@ export default new Router({
       path: '/security',
       component: resolve => require(['@/components/pages/mine/security.vue'], resolve)
     },{
+      path: '/cookie',
+      component: resolve => require(['@/components/pages/mine/cookie.vue'], resolve)
+    },{
       path: '/us',
       component: resolve => require(['@/components/pages/mine/us.vue'], resolve)
     },{
