@@ -12,7 +12,7 @@
       <div class="fsize-28 color-666 conpany-address">
         <p>公司地址：陕西省西安市高新区锦业路1号</p>
         <p>公司网址：www.gz.con</p>
-        <p>联系电话：029-8888888   13688888888</p>
+        <p>联系电话：029-8888888&nbsp;&nbsp;&nbsp;&nbsp;13688888888</p>
       </div>
     </div>
   </div>
@@ -38,24 +38,22 @@ export default {
 </script>
 
 <style scoped>
-.content {
-  padding: 0;
-}
-.content-fff{
+.content { padding: 0;}
+.content-fff {
   background: #fff;
   height: calc(100% - 1.18rem);
   padding: 0 .25rem;
 }
-.conpany-detail{
+.conpany-detail {
   text-indent: 2em;
   line-height: 25px;
   font-size: .28rem;
   color: #666;
 }
-.company-img{
+.company-img {
   height: 4.75rem;
   margin: .3rem 0;
 }
-.company-img img{width: 100%; height: 100%;}
-.conpany-address p{line-height: 25px;}
+.company-img img {width: 100%; height: 100%;}
+.conpany-address p {line-height: 25px;}
 </style>

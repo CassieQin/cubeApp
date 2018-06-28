@@ -55,13 +55,13 @@ export default {
   padding: 0 .25rem;
 }
 .detail-title{
-    height: .7rem;
-    line-height: .7rem;
+  height: .7rem;
+  line-height: .7rem;
 }
 .detail-time{
-    height: .3rem;
-    line-height: .3rem;
-    margin-bottom: .25rem;
+  height: .3rem;
+  line-height: .3rem;
+  margin-bottom: .25rem;
 }
 .detail-content .text{
     text-indent: 2em;
