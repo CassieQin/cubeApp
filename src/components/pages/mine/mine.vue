@@ -36,7 +36,7 @@ export default {
           name:'字体设置',
           url:'/fontfamily'
         },{
-          icon: 'fa-text-width ',
+          icon: 'fa-text-width',
           name:'字号设置',
           url:'/fontsize'
         },{

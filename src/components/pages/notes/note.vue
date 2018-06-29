@@ -1,6 +1,6 @@
 <template>
   <div class="note warpper">
-    <vhead :headTitle="headTitle"></vhead>
+    <vhead :headTitle="headTitle" :isShowList="isShowList"></vhead>
     <div class="content">
       <div class="fsize-28 searchbox mb3">
         <input class="ipt" placeholder="请输入搜索关键词"  />
@@ -15,7 +15,11 @@
           <div class="item-picture" :style="{background: 'url(' + item.url + ') left center no-repeat'}"></div>
           <div class="item-summary fsize-28 color-888">{{item.summary}}</div>
         </div>
-        <div class="item-btn" v-html="btn"></div>
+        <div class="item-btn">
+          <div class="btn-list color-888 border-right" @click="edit"><i class="fa fa-edit"></i> 编辑</div>
+          <div class="btn-list color-888 border-right" @click="deleteitem"><i class="fa fa-trash-o"></i> 删除</div>
+          <div class="btn-list color-888" @click="leadout"><i class="fa fa-share-square-o"></i> 导出</div>
+        </div>
       </div>
     </div>
     <vfoot></vfoot>
@@ -30,6 +34,7 @@ export default {
   data() {
     return {
       headTitle:'我的笔记',
+      isShowList: true,
       items: [
         {
           title: "《呼啸山庄》杂记",
@@ -45,16 +50,21 @@ export default {
             "夏洛蒂和传记作者告诉我们，爱米丽生性独立、豁达、纯真、刚毅、热情而又内向。她颇有男儿气概...",
           url: require('../../../assets/img.jpg')
         }
-      ],
-      btn:
-        '<div class="btn-list color-888 border-right"><i class="fa fa-edit"></i> 编辑</div>' +
-        '<div class="btn-list color-888 border-right"><i class="fa fa-trash-o"></i> 删除</div>' +
-        '<div class="btn-list color-888"><i class="fa fa-share-square-o"></i> 导出</div>'
+      ]
     };
   },
   methods:{
     viewDetail: function(){
       this.$router.push('/noteDetail');
+    },
+    edit: function(){
+      console.log('编辑内容');
+    },
+    deleteitem: function(){
+      console.log('删除内容');
+    },
+    leadout: function(){
+      console.log('导出内容');
     }
   },
   components:{

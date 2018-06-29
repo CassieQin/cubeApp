@@ -7,6 +7,13 @@
     <div class="item text-center fsize-32 color-333">{{headTitle}}</div>
     <div class="item text-right">
       <div class="fsize-28" v-show="isShowRight">编辑</div>
+      <div class="fsize-3" v-show="isShowList" @click="showlist">
+        <i class="fa fa-list"></i>
+      </div>
+      <div class="" v-show="isShowfont">
+        <span @click="setFontsize">Aa</span>
+        <span class="ml15" @click="attachment">附件</span>
+      </div>
     </div>
   </div>
 </template>
@@ -21,22 +28,24 @@ export default {
   },
   props:{
     headTitle:'',
-    isShow:{
-      type: Boolean,
-      default: false
-    },
-    isShowRight:{
-      type: Boolean,
-      default: false
-    },
-    isShowPlus:{
-      type: Boolean,
-      default: false
-    }
+    isShow: false,
+    isShowRight:false,
+    isShowPlus:false,
+    isShowList:false,
+    isShowfont:false
   },
   methods:{
     goback: function(){
       this.$router.back(-1);
+    },
+    showlist: function(){
+      console.log('显示列表');
+    },
+    setFontsize: function(){
+      console.log('设置字号');
+    },
+    attachment: function(){
+      console.log('打开附件');
     }
   }
 }

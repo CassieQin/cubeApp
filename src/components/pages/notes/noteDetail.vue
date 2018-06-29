@@ -1,6 +1,6 @@
 <template>
   <div class="notedetail warpper">
-    <vhead :isShow="isShow" ></vhead>
+    <vhead :isShow="isShow" :isShowfont="isShowfont"></vhead>
     <div class="content content-fff">
       <div class="detail-title color-333 fsize-32">《呼啸山庄》杂记</div>
       <div class="detail-time color-999 fsize-24">2018-06-11 16:02</div>
@@ -25,7 +25,8 @@ export default {
   name: 'notedetail',
   data () {
     return {
-      isShow: true
+      isShow: true,
+      isShowfont: true
     }
   },
   components:{
